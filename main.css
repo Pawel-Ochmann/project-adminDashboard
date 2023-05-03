@@ -30,6 +30,7 @@
  }
 img, button {
     transition: 0.3s;
+    cursor: pointer;
 }
  .container img:hover {
     border-color: var(--colorSecondary);
@@ -37,14 +38,14 @@ img, button {
 
 .container {
     display:grid;
-    grid-template-columns: 300px auto clamp(350px,20%, 500px);
-    grid-template-rows: 180px 1fr 1fr;
+    grid-template-columns: 300px auto clamp(350px,22%, 600px);
+    grid-template-rows: 180px auto auto;
     background-color: var(--backgroundColor);
 } 
 nav {
     display:grid;
     align-content: start;
-    gap: 1.5rem 0;
+    gap: 1rem 0;
     grid-template-columns: 50px auto;
     background-color: var(--colorMain);
     color:white;
@@ -57,11 +58,33 @@ nav a {
     text-decoration: none;
     color:white;
     align-self: end;
+    transition: .3s;
+    width: min-content;
 }
+
+nav a:hover {
+    color: var(--backgroundColor);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 8px 8px 12px -10px rgba(66, 68, 90, 1);
+}
+
+nav a:nth-of-type(7) {
+    margin-bottom: 2rem;
+}
+
 nav svg {
-    width: 1.5rem;
+    width: 1.3rem;
     aspect-ratio: 1;
 }
+
+#dashboard {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+svg:first-child {
+    width:1.7rem;
+}
+
  
 header {
     grid-column: span 2;
@@ -76,6 +99,7 @@ header svg {
     display:inline-block;
     width:1.5rem;
     aspect-ratio: 1;
+    cursor: pointer;
 }
 
 header label {
@@ -94,12 +118,12 @@ input[type=text] {
     height: 1.5rem;
     width: 0;
     transition: .5s;
-    padding: 0 1rem;
+    padding: 0 .75rem;
     font-size: 1rem;
 }
 input[type=text]:focus {
     accent-color: var(--backgroundColor);
-    width:300px;
+    width:calc(150px + 5vw);
     outline: none;
     border-radius: .75rem;
 }
@@ -136,7 +160,7 @@ input[type=text]:focus {
     align-self: center;
 }
 .welcome-section h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .welcome-section p {
     font-weight: 700;
@@ -169,7 +193,6 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: 1.5rem;
     gap:1rem;
-    align-content: start;
     padding:1rem;
 }
 
@@ -232,7 +255,7 @@ section .card {
 .ann-box {
     background-color: #fff;
     border-radius: .5rem;
-    padding:1rem;
+    padding:1.5rem;
     display: grid;
     gap:1rem;
     box-shadow: 8px 8px 12px -10px rgba(66, 68, 90, 1);
@@ -256,6 +279,7 @@ section .card {
 
 .trending h2 {
     font-size: 1.2rem;
+    cursor: pointer;
 }
 .user {
     display:grid;
@@ -272,7 +296,7 @@ section .card {
 
 .trending-box {
     background-color: #fff;
-    padding:1rem;
+    padding:1.5rem;
     box-shadow: 8px 8px 12px -10px rgba(66, 68, 90, 1);
     border-radius: .5rem;
     display: grid;
