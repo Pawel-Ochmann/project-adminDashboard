@@ -37,7 +37,7 @@ img, button {
 
 .container {
     display:grid;
-    grid-template-columns: 300px auto 300px;
+    grid-template-columns: 300px auto clamp(350px,20%, 500px);
     grid-template-rows: 200px 1fr 1fr;
     background-color: var(--backgroundColor);
 } 
@@ -199,6 +199,7 @@ section .card {
     padding:1rem;
     gap: 1rem;
     margin-right: 1.5rem;
+    align-content: start;
 }
 .announcement {
     padding-bottom: 1rem;
@@ -217,12 +218,51 @@ section .card {
     padding:1rem;
     display: grid;
     gap:1rem;
+    box-shadow: 8px 8px 12px -10px rgba(66, 68, 90, 1);
 }
 .announcements h2 {
     font-size: 1.2rem;
 }
 
 .announcement p {
-    font-size: .7rem;
+    font-size: .8rem;
+    color: var(--fontColorLighter);
+}
+
+.trending {
+    display:grid;
+    align-content: start;
+    padding:1rem;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+.trending h2 {
+    font-size: 1.2rem;
+}
+.user {
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    gap:.2rem .5rem;
+}
+
+.trending img {
+    width: 3.3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    grid-row: span 2;
+}
+
+.trending-box {
+    background-color: #fff;
+    padding:1rem;
+    box-shadow: 8px 8px 12px -10px rgba(66, 68, 90, 1);
+    border-radius: .5rem;
+    display: grid;
+    gap: 1.3rem;
+}
+
+.trending p {
+    font-size: .9rem;
     color: var(--fontColorLighter);
 }
