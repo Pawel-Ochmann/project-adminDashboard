@@ -94,6 +94,7 @@ header {
     padding: 1rem 4rem;
     row-gap: 1rem;
     background-color: #fff;
+    box-shadow: 0 4px 6px -6px #222;
 }
 header svg {
     display:inline-block;
@@ -193,7 +194,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: 1.5rem;
     gap:1rem;
-    padding:1rem;
+    padding:2.5rem 1rem;
 }
 
 section h2 {
@@ -236,7 +237,7 @@ section .card {
 
 .announcements {
     display:grid;
-    padding:1rem;
+    padding: 2.5rem 1rem 1rem 1rem;
     gap: 1rem;
     margin-right: 1.5rem;
     align-content: start;
@@ -272,7 +273,7 @@ section .card {
 .trending {
     display:grid;
     align-content: start;
-    padding:1rem;
+    padding:1rem 1rem 2.5rem 1rem;
     gap: 1rem;
     margin-right: 1.5rem;
 }
