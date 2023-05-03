@@ -2,7 +2,6 @@
 
 :root {
     --colorMain:#1992d4;
-    --colorSecondary:#135d85;
     --fontColorLighter:rgb(121, 121, 121);
     --backgroundColor:#e2e8f0;
 }
@@ -13,9 +12,7 @@
 
 /* font-family: 'Roboto', sans-serif; */
 
- @import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,300;1,1;1,100;1,200;1,300&display=swap');
 
- /* font-family: 'Ysabeau', sans-serif; */
 :root {
     box-sizing : border-box;
 }
